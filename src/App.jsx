@@ -3,8 +3,8 @@ import AnnouncementBar from "./components/AnnouncementBar";
 import Navbar from "./components/Navbar";
 
 
-import Home from "./pages/Home";
-import Login from "../pages/Login";
+import Home from "./pages/Home.jsx";
+import Login from "../pages/Login.jsx";
 import Signup from "../pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import "./index.css"
