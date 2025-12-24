@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+/* Tailwind v4 source scanning */
+@source "./**/*.{js,ts,jsx,tsx,html}";
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔴 THIS MUST COME BEFORE ANY @apply */
+@reference utilities;
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+
+
+
+
+
+@keyframes floatLeft {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes floatRight {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes dangle {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float-left {
+  animation: floatLeft 8s ease-in-out infinite;
+}
+.animate-float-right {
+  animation: floatRight 8s ease-in-out infinite;
+}
+.animate-dangle {
+  animation: dangle 6s ease-in-out infinite;
+}
