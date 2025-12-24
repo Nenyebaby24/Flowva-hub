@@ -8,10 +8,14 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  // 1. Added error message state
+  const [errorMsg, setErrorMsg] = useState("");
 
   async function handleLogin(e) {
     e.preventDefault();
     setLoading(true);
+    // 2. Clear old errors when starting a new attempt
+    setErrorMsg("");
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
@@ -21,17 +25,16 @@ export default function Login() {
     setLoading(false);
 
     if (error) {
-      alert(error.message);
+      // 3. Set the error message instead of an alert
+      setErrorMsg(error.message);
     } else {
       navigate("/dashboard");
     }
   }
 
   return (
-    // Vibrant purple background matches the screenshot
     <div className="min-h-screen flex items-center justify-center bg-[#8B1CFF] p-4 font-sans">
       
-      {/* Centered White Card with rounded corners */}
       <div className="bg-white w-full max-w-[480px] rounded-2xl py-12 px-8 md:px-12 flex flex-col items-center shadow-xl">
         
         <header className="text-center mb-8">
@@ -39,8 +42,14 @@ export default function Login() {
           <p className="text-gray-500 text-sm font-medium">Log in to receive personalized recommendations</p>
         </header>
 
+        {/* 4. Display the error message in a nice UI box */}
+        {errorMsg && (
+          <div className="w-full bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm mb-6 text-center">
+            {errorMsg}
+          </div>
+        )}
+
         <form onSubmit={handleLogin} className="w-full space-y-5">
-          {/* Email Field */}
           <div className="flex flex-col gap-2">
             <label className="text-gray-700 font-semibold text-sm">Email</label>
             <input
@@ -53,7 +62,6 @@ export default function Login() {
             />
           </div>
 
-          {/* Password Field */}
           <div className="flex flex-col gap-2 relative">
             <label className="text-gray-700 font-semibold text-sm">Password</label>
             <div className="relative">
@@ -80,7 +88,6 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Sign In Button */}
           <button
             type="submit"
             disabled={loading}
@@ -90,14 +97,12 @@ export default function Login() {
           </button>
         </form>
 
-        {/* Divider line with "or" */}
         <div className="w-full flex items-center my-8">
           <div className="flex-grow border-t border-gray-100"></div>
           <span className="px-4 text-[#8B1CFF] text-xs font-bold uppercase">or</span>
           <div className="flex-grow border-t border-gray-100"></div>
         </div>
 
-        {/* Google Login Button */}
         <button className="w-full flex items-center justify-center gap-3 border border-gray-200 py-3 rounded-lg hover:bg-gray-50 transition-colors mb-6">
           <img 
             src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" 
@@ -107,7 +112,6 @@ export default function Login() {
           <span className="text-gray-600 font-semibold text-sm">Sign in with Google</span>
         </button>
 
-        {/* Footer Navigation */}
         <p className="text-gray-500 text-sm font-medium">
           Don't have an account? <Link to="/signup" className="text-[#8B1CFF] font-bold ml-1">Sign up</Link>
         </p>
