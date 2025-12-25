@@ -3,9 +3,9 @@ import AnnouncementBar from "./components/AnnouncementBar";
 import Navbar from "./components/Navbar";
 
 
-import Home from "./pages/Home.jsx";
-import Login from "./src/pages/Login.jsx";
-import Signup from "./src/pages/Signup";
+import Home from "./pages/Home";
+import Login from "./pages/Login";      // Corrected: removed 'src'
+import Signup from "./pages/Signup";    // Corrected: removed '.src' and added '/'
 import Dashboard from "./pages/Dashboard";
 import "./index.css"
 
