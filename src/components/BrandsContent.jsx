@@ -26,18 +26,18 @@ export default function BrandsContent() {
       >
         {/* First set of logos */}
         <div className="flex gap-20 items-center shrink-0 opacity-60">
-          <img src="/reclaim-logo.png" alt="Reclaim" className="h-8 md:h-12" />
-          <img src="/brevo-logo.png" alt="Brevo" className="h-8 md:h-12" />
-          <img src="/jotform-logo.png" alt="Jotform" className="h-8 md:h-12" />
-          <img src="/monday.com-logo.png" alt="monday.com" className="h-8 md:h-12" />
+          <img src="/banner/reclaim.svg" alt="Reclaim" className="h-8 md:h-12" />
+          <img src="/banner/brevo.svg" alt="Brevo" className="h-8 md:h-12" />
+          <img src="/banner/jotform.svg" alt="Jotform" className="h-8 md:h-12" />
+          <img src="/banner/monday.svg" alt="monday.com" className="h-8 md:h-12" />
         </div>
 
         {/* Duplicated set for seamless looping */}
         <div className="flex gap-20 items-center shrink-0 opacity-60">
-          <img src="/reclaim-logo.png" alt="Reclaim" className="h-8 md:h-12" />
-          <img src="/brevo-logo.png" alt="Brevo" className="h-8 md:h-12" />
-          <img src="/jotform-logo.png" alt="Jotform" className="h-8 md:h-12" />
-          <img src="/monday.com-logo.png" alt="monday.com" className="h-8 md:h-12" />
+          <img src="/banner/reclaim.svg" alt="Reclaim" className="h-8 md:h-12" />
+          <img src="/banner/brevo.svg" alt="Brevo" className="h-8 md:h-12" />
+          <img src="/banner/jotform.svg" alt="Jotform" className="h-8 md:h-12" />
+          <img src="/banner/monday.svg" alt="monday.com" className="h-8 md:h-12" />
         </div>
       </motion.div>
 
@@ -469,7 +469,7 @@ export default function BrandsContent() {
                 title: "Subscribe.",
                 description: "Choose the plan that fits your feature goals.",
                 bgColor: "bg-[#F17336]", // Orange
-                image: "/subscribe-heart.png", 
+                image: "/images/subscribe.svg", 
               },
               {
                 id: 2,
@@ -477,7 +477,7 @@ export default function BrandsContent() {
                 title: "Launch Features",
                 description: "Set up actions, schedule them, and reach techies, freelancers, and remote workers where they work.",
                 bgColor: "bg-[#A855F7]", // Purple
-                image: "/rocket.png",
+                image: "/images/launch.svg",
               },
               {
                 id: 3,
@@ -485,7 +485,7 @@ export default function BrandsContent() {
                 title: "Engage Users",
                 description: "Offer perks and rewards that drive deeper participation.",
                 bgColor: "bg-[#ED5C8A]", // Pink
-                image: "/megaphone.png", 
+                image: "/images/speaker.svg", 
               },
               {
                 id: 4,
@@ -493,7 +493,7 @@ export default function BrandsContent() {
                 title: "Track Results",
                 description: "Monitor feature performance in real time with actionable analytics.",
                 bgColor: "bg-[#0B8A44]", // Green
-                image: "/analytics-pie.png", 
+                image: "/images/track.svg", 
               },
             ].map((step) => (
               <div
@@ -528,7 +528,7 @@ export default function BrandsContent() {
             
             <div className="mt-8 md:mt-0 flex shrink-0">
               <img 
-                src="/crown-premium.png" 
+                src="/images/crown.svg" 
                 alt="Premium Support" 
                 className="w-64 md:w-80 h-auto object-contain"
               />
