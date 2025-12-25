@@ -53,7 +53,7 @@ export default function Hero({ view, setView }) {
         {view === 'users' ? (
           <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter uppercase">
             YOUR <span className="bg-[#A855F7] text-white px-4 py-1 rounded-2xl text-[0.8em]">SMART</span>
-            <br /> SPACE TO MANAGE YOUR DIGITAL LIFE
+            <br /> SPACE TO MANAGE YOUR DIGITAL LIFE AND BE REWARDED
           </h1>
         ) : (
           <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter uppercase">
