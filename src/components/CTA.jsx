@@ -6,7 +6,7 @@ const CTA = () => {
     <div className="min-h-screen bg-white flex items-center justify-center p-4">
       
       {/* Main Yellow Card */}
-      <div className="relative w-full max-w-5xl bg-[#EBFF38] rounded-[40px] py-24 px-10 overflow-hidden flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-6xl bg-[#EBFF38] rounded-[40px] py-24 px-10 overflow-hidden flex flex-col items-center justify-center">
         
         {/* LEFT SIDE COINS */}
         <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-between py-6 h-full pointer-events-none">
@@ -31,7 +31,7 @@ const CTA = () => {
         {/* CONTENT AREA */}
         <div className="relative z-10 flex flex-col items-center text-center max-w-4xl">
           {/* Main Heading: Heavy weight, tight tracking, uppercase */}
-          <h1 className="text-[48px] md:text-[72px] font-black text-[#111] leading-[1.1] tracking-tighter uppercase mb-6">
+          <h1 className="text-[40px] md:text-[56px] font-black text-[#111] leading-[1.1] tracking-tighter uppercase mb-6">
             Stay Productive.<br />Get Rewarded.
           </h1>
           

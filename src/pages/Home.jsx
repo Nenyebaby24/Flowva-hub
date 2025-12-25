@@ -5,6 +5,7 @@ import Stats from '../components/Stats';
 import Everything from '../components/Everything';
 import Download from '../components/Download';
 import Features from '../components/Features';
+import Bluebox from '../components/Bluebox';
 import Testimonials from '../components/Testimonials';
 import BrandsContent from '../components/BrandsContent';
 import FAQ from '../components/FAQ';
@@ -33,8 +34,10 @@ export default function Home() {
         </>
       ) : (
         <>
+          
           <BrandsContent /> 
           <FAQ type="brands" />
+          <Bluebox />
         </>
       )}
       

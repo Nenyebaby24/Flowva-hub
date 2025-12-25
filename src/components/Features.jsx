@@ -5,16 +5,24 @@ import { Play, Pause } from "lucide-react";
 // Helper component for the FlowCoins design
 function Coin({ top, right, scale, zIndex = 10, delay }) {
   return (
-    <motion.div
+    <motion.img
+      src="/icons/flow.svg" 
+      alt="FlowCoin"
+      // Remove the 'animate' and 'transition' lines below if you want them 
+      // to be fixed/static like the template.
       animate={{ y: [0, -12, 0] }}
       transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay }}
-      style={{ position: "absolute", top, right, zIndex, scale }}
-      className="w-24 h-24 bg-gradient-to-br from-[#FF9BF0] via-[#D19BFF] to-[#BD7AFF] rounded-full flex flex-col items-center justify-center text-white border-[3px] border-white shadow-2xl"
-    >
-      <span className="text-xl font-black leading-none drop-shadow-md">50</span>
-      <span className="text-[7px] font-black uppercase tracking-tighter">FlowCoins</span>
-      <div className="absolute top-2 left-4 w-10 h-5 bg-white/20 rounded-full blur-[1px] -rotate-45" />
-    </motion.div>
+      style={{ 
+        position: "absolute", 
+        top, 
+        right, 
+        zIndex, 
+        width: "100px", // Base size
+        height: "auto",
+        transform: `scale(${scale})`, // Applies the individual slide scales
+      }}
+      className="drop-shadow-xl select-none pointer-events-none"
+    />
   );
 }
 
