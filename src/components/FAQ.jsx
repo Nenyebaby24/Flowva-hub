@@ -9,27 +9,33 @@ export default function FAQ() {
     "Can I cancel my subscription anytime?",
     "Can I manage all my subscriptions in one place?",
     "Do you offer mobile apps?",
-    "What if I need help getting started?"
+    "What if I need help getting started?",
+    "Can I connect with other tech professionals on Flowva?",
+    "What rewards can I earn with Flowva?"
   ];
 
   const answers = {
     "What is Flowvahub?":
-      "Flowvahub is an all-in-one platform designed to help you manage workflows, track progress, and earn rewards efficiently.",
+      "Flowvahub is your productivity sidekick — helping you discover new tools, manage subscriptions, and earn rewards for staying productive..",
     "Is my data secure with Flowva?":
-      "Yes. We use industry-standard encryption and best security practices to protect your data.",
+      "Absolutely. Your data is private and never sold. You decide what to share, and it’s only used to improve your experience.",
     "How does team collaboration work?":
-      "You can invite teammates, assign tasks, and collaborate in real time across shared workflows.",
+      "Teams can share recommendations, optimize workflows together, view analytics, and manage shared subscriptions from a single dashboard. (Note: Rewards are not included for Teams.)",
     "How do Smart Tool Recommendations work?":
-      "Flowva analyzes your workflow and suggests tools that best match your needs.",
+      "The more you use our platform, the better it understands your workflow — giving you smarter, more relevant tool suggestions over time.",
     "Can I cancel my subscription anytime?":
-      "Yes. You can cancel at any time without hidden fees.",
+      "Yes. You can cancel your Pro or Team plan anytime. You’ll keep access until the end of your billing cycle, and you can always downgrade to our Free plan.",
     "Can I manage all my subscriptions in one place?":
-      "Absolutely. Flowva lets you manage, track, and optimize subscriptions from one dashboard.",
+      "Yes! Flowva tracks all your subscriptions in one place — sending renewal alerts, monitoring spending, and helping you save money.",
     "Do you offer mobile apps?":
-      "Mobile apps are currently in development and coming soon.",
+      "Yes 😃 Our iOS and Android apps are launching soon, so you can manage subscriptions, get recommendations, earn rewards, and stay connected anywhere.",
     "What if I need help getting started?":
-      "Our onboarding guides and support team are ready to help you every step of the way."
-  };
+      "We provide onboarding guides, tutorials, and email support. Pro users get priority support, while Teams and Organizations receive dedicated onboarding and training.", // Added comma here
+    "Can I connect with other tech professionals on Flowva?":
+      "Yes! Flowva has an active community of tech enthusiasts, freelancers, and remote professionals. You can connect with others, discuss tools, get feedback, and collaborate with like-minded users, all while discovering new ways to optimize your workflow.",
+    "What rewards can I earn with Flowva?":
+      "All users earn basic rewards by using Flowva, with extra perks for Premium. Rewards come from completing simple tasks — trying recommended tools or sharing feedback — and can be redeemed for gift cards, cash, or community perks."
+  }; // Removed the extra }; that was here
 
   const [openIndex, setOpenIndex] = useState(null);
 

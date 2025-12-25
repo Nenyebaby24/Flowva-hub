@@ -7,7 +7,7 @@ export default function Hero({ view, setView }) {
   return (
     <section className="pt-40 text-center px-4 relative z-10">
       {/* Switcher Pill Container */}
-      <div className="inline-flex items-center p-1 bg-white rounded-full mb-8 border border-gray-100 shadow-sm relative z-20">
+      <div className="inline-flex items-center p-1 bg-white rounded-full -mt-16 mb-8 border border-gray-100 shadow-sm relative z-20">
         
         {/* For Users Button */}
         <button
