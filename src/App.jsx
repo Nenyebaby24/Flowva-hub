@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login"; 
 import Signup from "./pages/Signup"; 
+import Jotform from "./pages/Jotform";
 import Dashboard from "./pages/Dashboard";
 import "./index.css";
 
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/jotform" element={<Jotform />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
