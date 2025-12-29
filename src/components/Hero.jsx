@@ -13,9 +13,9 @@ export default function Hero({ view, setView }) {
   };
 
   return (
-    <section className="pt-40 text-center px-4 relative z-10">
+    <section className="pt-40 -mt-32 text-center px-4 relative z-10">
       {/* Switcher Pill Container */}
-      <div className="inline-flex items-center p-1 bg-white rounded-full -mt-16 mb-8 border border-gray-100 shadow-sm relative z-20">
+      <div className="inline-flex items-center p-1 bg-white rounded-full -mt-32 mb-8 border border-gray-100 shadow-sm relative z-20">
         
         {/* For Users Button */}
         <button
@@ -57,10 +57,10 @@ export default function Hero({ view, setView }) {
       </div>
 
       {/* Conditional Headline logic remains same */}
-      <div className="mt-8">
+      <div className="mt-4">
         {view === 'users' ? (
           <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter uppercase">
-            YOUR <span className="bg-[#A855F7] text-white px-4 py-1 rounded-2xl text-[0.8em]">SMART</span>
+            YOUR <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-[0.8em]">SMART</span>
            SPACE TO MANAGE YOURDIGITAL LIFE AND BE REWARDED <br />
             <button 
                     onClick={handleSignUp}
@@ -72,8 +72,8 @@ export default function Hero({ view, setView }) {
               
           
         ) : (
-          <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter uppercase">
-            CONNECT WITH <span className="bg-[#A855F7] text-white px-4 py-1 rounded-2xl text-[0.8em]">TECH</span>
+          <h1 className="text-3xl md:text-6xl font-black leading-[1.1] tracking-tighter uppercase">
+            CONNECT WITH <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-[0.8em]">TECH</span>
             <br /> PROFESSIONALS WHO ACTUALLY ENGAGE
             <br /><button 
                     onClick={handleJotform}

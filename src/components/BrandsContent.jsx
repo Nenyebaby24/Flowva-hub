@@ -1,6 +1,12 @@
 import React from 'react';
-import { BadgeCheck, Gift } from "lucide-react";
 import { motion } from "framer-motion";
+import verifiedIcon from '../assets/verified.svg';
+import growthIcon from '../assets/growth.svg';
+import selfServeIcon from '../assets/self-serve.svg'; 
+import premiumIcon from '../assets/premium.svg';
+import exclusiveIcon from '../assets/exclusive.svg';
+import analyticsIcon from '../assets/analytics.svg';
+
 
 
 
@@ -25,19 +31,41 @@ export default function BrandsContent() {
         }}
       >
         {/* First set of logos */}
-        <div className="flex gap-20 items-center shrink-0 opacity-60">
-          <img src="/banner/reclaim.svg" alt="Reclaim" className="h-8 md:h-12" />
-          <img src="/banner/brevo.svg" alt="Brevo" className="h-8 md:h-12" />
-          <img src="/banner/jotform.svg" alt="Jotform" className="h-8 md:h-12" />
-          <img src="/banner/monday.svg" alt="monday.com" className="h-8 md:h-12" />
+        <div className="flex gap-6 items-center shrink-0">
+            {/* Reclaim */}
+  <div className="h-52 w-56 rounded-2xl border border-gray-200 bg-white flex items-center justify-center">
+    <img src="/banner/reclaim.svg" alt="Reclaim" className="h-10 md:h-12" />
+  </div>
+
+          {/* Brevo */}
+  <div className="h-52 w-56 rounded-2xl border border-gray-200 bg-white flex items-center justify-center">
+    <img src="/banner/brevo.png" alt="Brevo" className="h-28 md:h-30" />
+  </div>
+
+           {/* Jotform */}
+  <div className="h-52 w-56 rounded-2xl border border-orange-200 bg-[#FF6A00] flex items-center justify-center">
+    <img src="/banner/jotform.svg" alt="Jotform" className="h-10 md:h-12" />
+  </div>
+          {/* Monday */}
+  <div className="h-52 w-56 rounded-2xl border border-indigo-200 bg-[#5B5BD6] flex items-center justify-center">
+    <img src="/banner/monday.svg" alt="monday.com" className="h-28 md:h-30" />
+  </div>
         </div>
 
         {/* Duplicated set for seamless looping */}
-        <div className="flex gap-20 items-center shrink-0 opacity-60">
-          <img src="/banner/reclaim.svg" alt="Reclaim" className="h-8 md:h-12" />
-          <img src="/banner/brevo.svg" alt="Brevo" className="h-8 md:h-12" />
-          <img src="/banner/jotform.svg" alt="Jotform" className="h-8 md:h-12" />
-          <img src="/banner/monday.svg" alt="monday.com" className="h-8 md:h-12" />
+        <div className="flex gap-6 items-center shrink-0">
+         <div className="h-52 w-56 rounded-2xl border border-gray-200 bg-white flex items-center justify-center">
+    <img src="/banner/reclaim.svg" alt="Reclaim" className="h-10 md:h-12" />
+  </div>
+          <div className="h-52 w-56 rounded-2xl border border-gray-200 bg-white flex items-center justify-center">
+    <img src="/banner/brevo.png" alt="Brevo" className="h-28 md:h-30" />
+  </div>
+           <div className="h-52 w-56 rounded-2xl border border-orange-200 bg-[#FF6A00] flex items-center justify-center">
+    <img src="/banner/jotform.svg" alt="Jotform" className="h-10 md:h-12" />
+  </div>
+           <div className="h-52 w-56 rounded-2xl border border-indigo-200 bg-[#5B5BD6] flex items-center justify-center">
+    <img src="/banner/monday.svg" alt="monday.com" className="h-28 md:h-30" />
+  </div>
         </div>
       </motion.div>
 
@@ -45,7 +73,7 @@ export default function BrandsContent() {
       
     </div>
   </div>
-
+ 
 
   <section className="py-20 bg-white flex flex-col items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 w-full">
@@ -55,7 +83,7 @@ export default function BrandsContent() {
             <h2 className="text-[#344054] font-bold text-base mb-3 tracking-tight">
               Trusted by 20+ forward-thinking brands
             </h2>
-            <p className="text-[#475467] text-lg max-w-2xl leading-relaxed">
+            <p className="text-[#475467] text-lg leading-relaxed">
               Join companies already reaching 10,000+ remote workers and freelancers 
               actively discovering and organizing their digital tools
             </p>
@@ -66,32 +94,32 @@ export default function BrandsContent() {
             
             {/* Boltshift */}
             <div className="flex items-center gap-3 shrink-0">
-              <img src="/boltshift-logo.png" alt="" className="h-8 w-auto grayscale" />
-              <span className="text-[#344054] font-bold text-2xl tracking-tight">Boltshift</span>
+              <img src="/boltshift-logo.svg" alt="" className="h-8 w-auto grayscale" />
+             
             </div>
 
             {/* FeatherDev */}
             <div className="flex items-center gap-3 shrink-0">
-              <img src="/featherdev-logo.png" alt="" className="h-8 w-auto grayscale" />
-              <span className="text-[#344054] font-bold text-2xl tracking-tight">FeatherDev</span>
+              <img src="/featherdev-logo.svg" alt="" className="h-8 w-auto grayscale" />
+              
             </div>
 
             {/* Spherule */}
             <div className="flex items-center gap-3 shrink-0">
-              <img src="/spherule-logo.png" alt="" className="h-8 w-auto grayscale" />
-              <span className="text-[#344054] font-bold text-2xl tracking-tight">Spherule</span>
+              <img src="/spherule-logo.svg" alt="" className="h-8 w-auto grayscale" />
+              
             </div>
 
             {/* GlobalBank */}
             <div className="flex items-center gap-3 shrink-0">
-              <img src="/globalbank-logo.png" alt="" className="h-8 w-auto grayscale" />
-              <span className="text-[#344054] font-bold text-2xl tracking-tight">GlobalBank</span>
+              <img src="/globalbank-logo.svg" alt="" className="h-8 w-auto grayscale" />
+              
             </div>
 
             {/* Nietzsche */}
             <div className="flex items-center gap-3 shrink-0">
-              <img src="/nietzsche-logo.png" alt="" className="h-8 w-auto grayscale" />
-              <span className="text-[#344054] font-bold text-2xl tracking-tight">Nietzsche</span>
+              <img src="/nietzsche-logo.svg" alt="" className="h-8 w-auto grayscale" />
+              
             </div>
 
           </div>
@@ -99,293 +127,270 @@ export default function BrandsContent() {
       </section>
 </section>
 
-      {/* 2. FEATURES GRID: AMPLIFY YOUR BRAND */}
-<section className="py-20 max-w-7xl mx-auto px-4">
-  <h2 className="text-center text-6xl font-black uppercase mb-16 tracking-tighter">
+      {/* 2. FEATURES GRID: AMPLIFY YOUR BRAND (RESIZED) */}
+<section className="py-16 max-w-5xl mx-auto px-4 -mt-32">
+  <h2 className="text-center text-5xl font-black uppercase mb-12 tracking-tighter">
     Amplify your brand's success
   </h2>
   
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-6">
     
     {/* Card 1: Community */}
-    <div className="bg-[#F3E8FF] p-10 rounded-[2.5rem] flex flex-col min-h-[500px]">
-      <h3 className="text-3xl font-bold leading-tight mb-8 max-w-xs">
+    <div className="bg-[#F3E8FF] p-8 rounded-[2rem] flex flex-col min-h-[400px]">
+      <h3 className="text-2xl font-bold leading-tight mb-6 max-w-[250px]">
         Engage an active community of tech savvy users
       </h3>
       
       {/* Centered Image Area */}
-      <div className="flex-grow flex items-center justify-center py-6">
-        <div className="relative w-64 h-48 flex items-center justify-center text-8xl">
-           {/* Replace with your local asset or 3D illustration */}
-           🤝 
+      <div className="flex-grow flex items-center justify-center py-4">
+        <div className="flex items-center gap-4">
+          {/* Reduced image height to fit new card scale */}
+          <img src='/engage.svg' alt='' className="h-32 w-auto" />
         </div>
       </div>
       
-      <p className="text-gray-600 text-lg font-medium leading-snug max-w-sm mt-auto">
+      <p className="text-gray-600 text-base font-medium leading-snug max-w-[300px] mt-auto">
         Thousands of engaged users explore and use tools on our platform everyday
       </p>
     </div>
 
     {/* Card 2: Exclusive Value */}
-    <div className="bg-[#F8F3FF] p-10 rounded-[2.5rem] flex flex-col min-h-[500px]">
-      <h3 className="text-3xl font-bold leading-tight mb-8 max-w-xs">
+    <div className="bg-[#F8F3FF] p-8 rounded-[2rem] flex flex-col min-h-[400px]">
+      <h3 className="text-2xl font-bold leading-tight mb-6 max-w-[250px]">
         Offer Exclusive Value
       </h3>
       
       {/* Centered Image Area */}
-      <div className="flex-grow flex items-center justify-center py-6">
-        <div className="flex items-center gap-4 text-7xl">
-           {/* Replace with your local asset or 3D illustrations */}
-           🎟️ 💵 💎
+      <div className="flex-grow flex items-center justify-center py-4">
+        <div className="flex items-center gap-4">
+           <img src='/offer.svg' alt='' className="h-32 w-auto" />
         </div>
       </div>
       
-      <p className="text-gray-600 text-lg font-medium leading-snug max-w-sm mt-auto">
+      <p className="text-gray-600 text-base font-medium leading-snug max-w-[300px] mt-auto">
         Stand out with special discounts, cashback, or unique perks for our users
       </p>
     </div>
     
   </div>
-</section>
 
+  {/* 2.5 FEATURES GRID: VISIBILITY & IMPACT */}
+ 
+<div className="pb-20 max-w-7xl mx-auto px-4 mt-6">
+  <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-6">
 
-{/* 2.5 FEATURES GRID: VISIBILITY & IMPACT */}
-<section className="pb-20 max-w-7xl mx-auto px-4">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    
-    {/* Card 1: Boost Your Visibility */}
-    <div className="bg-[#F8F3FF] p-10 rounded-[2.5rem] flex flex-col min-h-[550px] relative overflow-hidden">
-      <h3 className="text-4xl font-bold leading-tight mb-4 text-black">
+    {/* Card 1: Boost Your Visibility (IMAGE ONLY) */}
+    <div className="bg-[#F8F3FF] p-6 rounded-[2rem] flex flex-col min-h-[400px]">
+      <h3 className="text-3xl font-bold leading-tight mb-3 text-black">
         Boost Your Visibility
       </h3>
-      
-      {/* Centered Graphic Area */}
-      <div className="flex-grow flex items-center justify-center relative py-6">
-        
-        {/* The Spotlight Card Mockup */}
-        <div className="bg-white rounded-3xl p-6 shadow-2xl border border-gray-100 w-full max-w-[340px] relative z-10">
-          <div className="text-[11px] font-bold text-gray-400 mb-4 uppercase tracking-widest">Top Tool Spotlight</div>
-          
-          <div className="flex gap-4">
-            {/* Yellow Circled Logo */}
-            <div className="relative shrink-0">
-              <div className="w-16 h-16 bg-[#FFD700] rounded-2xl border-[3px] border-white shadow-md flex items-center justify-center overflow-hidden">
-                {/* Visual approximation of the logo in the image */}
-                <div className="w-10 h-10 border-[5px] border-black rounded-full flex items-center justify-center">
-                  <div className="w-1 h-4 bg-black rotate-45 absolute"></div>
-                  <div className="w-1 h-4 bg-black -rotate-45 absolute"></div>
-                </div>
-              </div>
-            </div>
 
-            <div className="flex flex-col justify-center">
-              {/* Profile Picture & Toolkit Owner */}
-              <div className="flex items-center gap-2 mb-1">
-                <img 
-                  src="https://i.pravatar.cc/150?u=alex" 
-                  alt="Alex Rivera" 
-                  className="w-5 h-5 rounded-full object-cover border border-gray-200"
-                />
-                <span className="text-[10px] text-gray-500">From the toolkit of <strong className="text-black font-bold">"Alex Rivera"</strong></span>
-              </div>
-              
-              <div className="text-xl font-black text-gray-900 leading-tight">Keeper Security</div>
-              <div className="text-[11px] text-gray-400 font-medium">Password security made simple</div>
-            </div>
-          </div>
-
-          {/* Bottom Stats & Category Tags */}
-          <div className="mt-6 flex items-center justify-between">
-             <div className="flex items-center gap-1 text-[10px] font-bold text-gray-700 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
-               <span className="text-red-400 text-sm">★</span> 4.6 - 2.3k saves
-             </div>
-             <div className="flex items-center gap-2">
-                <span className="text-[10px] font-bold bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full">Security</span>
-                <div className="w-7 h-7 bg-gray-100 rounded-full flex items-center justify-center text-xs font-bold text-gray-800">↗</div>
-             </div>
-          </div>
-        </div>
-
-        {/* Floating Icons from image_0896df.png */}
-        <div className="absolute right-4 flex flex-col gap-6 transform translate-x-2">
-          <div className="text-5xl drop-shadow-xl animate-bounce" style={{ animationDuration: '3s' }}>🧭</div>
-          <div className="text-5xl drop-shadow-xl -rotate-12">📄</div>
-          <div className="text-5xl drop-shadow-xl rotate-12">💳</div>
-        </div>
+      {/* Image fills the visual space */}
+      <div className="flex-grow flex items-center justify-center">
+        <img
+          src="/tool/toptool.svg"
+          alt="Top Tool Spotlight"
+          className="w-full max-w-[340px] h-auto object-contain"
+        />
       </div>
-      
+
       <p className="text-gray-600 text-lg font-medium leading-snug max-w-[90%] mt-auto">
-        Get featured across our Homepage, Discover section, Rewards Hub, Library, Newsletter, and Blog.
+        Get featured across our Homepage, Discover, Rewards Hub, and more.
       </p>
     </div>
 
-    {/* Card 2: Measure Your Impact */}
-    <div className="bg-[#121212] p-10 rounded-[2.5rem] text-white flex flex-col min-h-[550px] relative overflow-hidden">
-      <h3 className="text-4xl font-bold leading-tight mb-4">
-        Measure Your Impact
-      </h3>
-      <p className="text-gray-400 text-lg font-medium max-w-[280px] mb-8">
-        Track how many users unlock, engage with, and activate your offer.
-      </p>
-      
-      {/* Large Stat and 3D Graphic Area */}
-      <div className="flex-grow flex flex-col justify-center relative">
-        <div className="text-8xl font-black mb-1 tracking-tighter">30,000+</div>
-        <div className="text-xl font-bold text-gray-500 uppercase tracking-wide">
-          Tools Added to Libraries
-        </div>
-        
-        {/* Yellow 3D Star Frame Placeholder from image_0896df.png */}
-        <div className="absolute right-[-20px] bottom-0 text-[12rem] rotate-[15deg] drop-shadow-[0_20px_50px_rgba(255,215,0,0.3)]">
-          <div className="relative flex items-center justify-center">
-             <span className="z-10">⭐</span>
-             {/* Simple CSS shape to mimic the yellow border frame */}
-             <div className="absolute w-32 h-32 bg-yellow-400 rounded-3xl -z-10 blur-sm opacity-50"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
-
-      {/* Suscribe to Flowva */}
- <section className="w-full bg-white py-20">
+       {/* Card 2: Measure Your Impact */}
+<div className="bg-[#121212] p-8 rounded-[2rem] text-white flex flex-col min-h-[400px] relative overflow-hidden">
   
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Top heading */}
-        <h2 className="text-center text-5xl font-extrabold uppercase tracking-tight">
-          Why Subscribe to Flowva?
-        </h2>
+  {/* Header Section */}
+  <h3 className="text-4xl font-bold leading-tight mb-4">
+    Measure Your Impact
+  </h3>
+  <p className="text-gray-400 text-base font-medium max-w-[280px]">
+    Track how many users unlock, engage with, and activate your offer.
+  </p>
 
-        <div className="mt-20 grid grid-cols-1 gap-16 lg:grid-cols-2">
-          {/* LEFT CONTENT */}
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-black">
-              Value Proposition
-            </p>
+  {/* Stats Section: Anchored Left */}
+  <div className="absolute bottom-8 left-8 z-10">
+    <div className="text-6xl font-bold tracking-tighter">
+      30,000+
+    </div>
+    <p className="text-lg font-bold text-white mt-1 leading-tight max-w-[130px]">
+      Tools Added to Libraries
+    </p>
+  </div>
 
-            <h3 className="text-6xl font-extrabold leading-tight uppercase">
-              Trusted by Leading
-              <br />
-              Products with
-              <br />
-              Organic Marketing
-              <br />
-              Success
-            </h3>
-          </div>
+  {/* Icons Section: Anchored Bottom-Right */}
+  <div className="absolute bottom-0 right-0 w-64 h-64 pointer-events-none">
+    
+    {/* Yellow 3D Star (Layered BEHIND the graph) */}
+    {/* Lowered z-index and positioned slightly left to make room for overlap */}
+    <div className="absolute bottom-8 right-3 rotate-[12deg] z-10">
+      <img 
+        src="/tool/star.svg" 
+        alt="" 
+        className="w-32 h-auto drop-shadow-[0_30px_60px_rgba(234,179,8,0.4)]" 
+      />
+    </div>
 
-          {/* RIGHT CARDS */}
-          <div className="flex flex-col gap-6 sm:flex-row">
-            {/* Card 1 */}
-            <div className="relative flex-1 rounded-3xl bg-purple-400 p-8 text-white">
-              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-white/20">
-                <BadgeCheck className="h-6 w-6 text-white" />
-              </div>
+    {/* Blue Progress Graph (Layered ON TOP of the star) */}
+    {/* Higher z-index and pushed off-edge to the right */}
+    <div className="absolute bottom-14 -right-15 rotate-[-8deg] z-20">
+      <img 
+        src="/tool/progress.svg" 
+        alt="" 
+        className="w-36 h-auto drop-shadow-lg" 
+      />
+     </div>
+    
+    </div>
+    </div>
+    </div>
 
-              <h4 className="mb-3 text-2xl font-bold">
-                Verified engagement
-              </h4>
+   </div>
 
-              <p className="text-sm leading-relaxed text-white/90">
-                Reach active tech-savvy professionals who manage their tool
-                libraries and actually try new tools, all included with your
-                subscription.
-              </p>
-            </div>
+   {/* Suscribe to Flowva */}
+<section className="w-full bg-white py-20 -mt-32">
+  <div className="mx-auto max-w-7xl px-6">
+    {/* Top heading */}
+    <h2 className="text-center text-5xl font-extrabold uppercase tracking-tight">
+      Why Subscribe to Flowva?
+    </h2>
 
-            {/* Card 2 */}
-            <div className="relative flex-1 rounded-3xl bg-pink-400 p-8 text-white">
-              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-white/20">
-                <Gift className="h-6 w-6 text-white" />
-              </div>
+    <div className="mt-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
+      {/* LEFT CONTENT */}
+      <div>
+        <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-black">
+          Value Proposition
+        </p>
 
-              <h4 className="mb-3 text-2xl font-bold">
-                Reward-Driven Growth
-              </h4>
-
-              <p className="text-sm leading-relaxed text-white/90">
-                Incentivize users automatically with Flowva’s built-in rewards
-                system — no extra fees, fully handled by the platform.
-              </p>
-            </div>
-          </div>
-        </div>
+        <h3 className="text-4xl font-extrabold leading-tight uppercase">
+          Trusted by Leading
+          <br />
+          Products with
+          <br />
+          Organic Marketing
+          <br />
+          Success
+        </h3>
       </div>
 
-      <div className="w-full bg-white py-20">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          
-          {/* CARD 1 */}
-          <div className="rounded-3xl bg-orange-500 p-8 text-white">
-            <div className="mb-6 text-4xl">🧑‍💻</div>
+      {/* RIGHT CARDS */}
+      <div className="flex flex-col gap-6 sm:flex-row">
+        {/* Card 1 */}
+        <div className="relative flex-1 rounded-3xl bg-purple-400 p-8 text-white">
+          <div className="mb-6">
+           <img src={verifiedIcon} alt="Verified" className="h-12 w-12" />
+           </div>
 
-            <h3 className="mb-4 text-2xl font-bold leading-snug">
-              Full Self-Serve Freedom
-            </h3>
+          <h4 className="mb-3 text-2xl font-bold">
+            Verified engagement
+          </h4>
 
-            <p className="text-sm leading-relaxed text-white/90">
-              Launch and manage campaigns anytime with an intuitive dashboard.
-              Target your campaigns, schedule actions, and track engagement with
-              complete control.
-            </p>
+          <p className="text-sm leading-relaxed text-white/90">
+            Reach active tech-savvy professionals who manage their tool
+            libraries and actually try new tools, all included with your
+            subscription.
+          </p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="relative flex-1 rounded-3xl bg-pink-400 p-8 text-white">
+          <div className="mb-6">
+          <img src={growthIcon} alt="Growth" className="h-12 w-12" />
           </div>
 
-          {/* CARD 2 */}
-          <div className="rounded-3xl bg-blue-500 p-8 text-white">
-            <div className="mb-6 text-4xl">💎</div>
+          <h4 className="mb-3 text-2xl font-bold">
+            Reward-Driven Growth
+          </h4>
 
-            <h3 className="mb-4 text-2xl font-bold leading-snug">
-              Optional Premium Support
-            </h3>
-
-            <p className="text-sm leading-relaxed text-white/90">
-              For top-tier brands or high-impact campaigns, our team can manage
-              your campaigns, optimize engagement, and provide advanced
-              analytics.
-            </p>
-          </div>
-
-          {/* CARD 3 */}
-          <div className="rounded-3xl bg-pink-500 p-8 text-white">
-            <div className="mb-6 text-4xl">🔒</div>
-
-            <h3 className="mb-4 text-2xl font-bold leading-snug">
-              Exclusive Access
-            </h3>
-
-            <p className="text-sm leading-relaxed text-white/90">
-              Your subscription unlocks Flowva’s curated audience. Our users are
-              verified, engaged, and relevant. Limited campaign slots maintain
-              visibility and exclusivity.
-            </p>
-          </div>
-
-          {/* CARD 4 */}
-          <div className="rounded-3xl bg-green-500 p-8 text-white">
-            <div className="mb-6 text-4xl">📊</div>
-
-            <h3 className="mb-4 text-2xl font-bold leading-snug">
-              Actionable Analytics
-            </h3>
-
-            <p className="text-sm leading-relaxed text-white/90">
-              Track real results: tool trials, user interactions, engagement
-              trends—not just impressions. Make data-driven decisions for every
-              campaign.
-            </p>
-          </div>
-
+          <p className="text-sm leading-relaxed text-white/90">
+            Incentivize users automatically with Flowva’s built-in rewards
+            system — no extra fees, fully handled by the platform.
+          </p>
         </div>
       </div>
     </div>
-    </section>
+  </div>
 
-      
-      {/* 3. GROWTH PLANS (Pricing) */}
-<section className="py-20 bg-white">
+  <div className="w-full bg-white py-20">
+    <div className="mx-auto max-w-7xl px-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* CARD 1 */}
+        <div className="rounded-3xl bg-orange-500 p-8 text-white">
+          <div className="mb-6">
+          <img src={selfServeIcon} alt="Self Serve" className="h-12 w-12" />
+        </div>
+          <h3 className="mb-4 text-2xl font-bold leading-snug">Full Self-Serve Freedom</h3>
+          <p className="text-sm leading-relaxed text-white/90">
+            Launch and manage campaigns anytime with an intuitive dashboard.
+          </p>
+        </div>
+
+        {/* CARD 2 */}
+        <div className="rounded-3xl bg-blue-500 p-8 text-white">
+          <div className="mb-6">
+          <img src={premiumIcon} alt="Premium Support" className="h-12 w-12" />
+        </div>
+          <h3 className="mb-4 text-2xl font-bold leading-snug">Optional Premium Support</h3>
+          <p className="text-sm leading-relaxed text-white/90">
+            For top-tier brands or high-impact campaigns, our team can manage your campaigns.
+          </p>
+        </div>
+
+        {/* CARD 3 */}
+        <div className="rounded-3xl bg-pink-500 p-8 text-white">
+          <div className="mb-6">
+          <img src={exclusiveIcon} alt="Exclusive Access" className="h-12 w-12" />
+        </div>
+          <h3 className="mb-4 text-2xl font-bold leading-snug">Exclusive Access</h3>
+          <p className="text-sm leading-relaxed text-white/90">
+            Your subscription unlocks Flowva’s curated audience. Our users are verified.
+          </p>
+        </div>
+
+        {/* CARD 4 */}
+        <div className="rounded-3xl bg-green-500 p-8 text-white">
+          <div className="mb-6">
+          <img src={analyticsIcon} alt="Analytics" className="h-12 w-12" />
+        </div>
+          <h3 className="mb-4 text-2xl font-bold leading-snug">Actionable Analytics</h3>
+          <p className="text-sm leading-relaxed text-white/90">
+            Track real results: tool trials, user interactions, engagement trends.
+          </p>
+        </div>
+      </div>
+
+      {/* STATS SECTION FROM IMAGE */}
+      <div className="-mt-8 grid grid-cols-1 gap-12 border-t border-gray-100 pt-16 md:grid-cols-3">
+        <div className="flex flex-col items-center md:items-start">
+          <span className="text-6xl font-black md:text-7xl">1200+</span>
+          <div className="mt-4 h-[1px] w-full bg-gray-200" />
+          <span className="mt-4 text-sm font-bold uppercase tracking-wider text-gray-900">
+            Active User/Month
+          </span>
+        </div>
+
+        <div className="flex flex-col items-center md:items-start">
+          <span className="text-6xl font-black md:text-7xl">35M+</span>
+          <div className="mt-4 h-[1px] w-full bg-gray-200" />
+          <span className="mt-4 text-sm font-bold uppercase tracking-wider text-gray-900">
+            Impressions
+          </span>
+        </div>
+
+        <div className="flex flex-col items-center md:items-start">
+          <span className="text-6xl font-black md:text-7xl">4200+</span>
+          <div className="mt-4 h-[1px] w-full bg-gray-200" />
+          <span className="mt-4 text-sm font-bold uppercase tracking-wider text-gray-900">
+            Personalized Ads
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* 3. GROWTH PLANS (Pricing) */}
+<section className="py-20 bg-white -mt-16">
   <h2 className="text-center text-5xl font-black mb-16 italic uppercase tracking-tight">Growth Plans</h2>
   
   <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
@@ -537,11 +542,13 @@ export default function BrandsContent() {
 
         </div>
       </section>
+      
+
+</section>
 
 
-      {/* 4. SUCCESS STORIES (Small Testimonials for Brands) */}
-     {/* 4. SUCCESS STORIES */}
-<section className="py-20 bg-white">
+       {/* 4. SUCCESS STORIES */}
+<section className="py-20 bg-white -mt-32">
   <div className="text-center mb-12">
     {/* Floating Heart Icon Placeholder */}
     <div className="flex justify-center mb-2">
@@ -589,10 +596,22 @@ export default function BrandsContent() {
     </div>
 
   </div>
+  
 </section>
+
+</section>
+</div>
+
+
+
+      
+      
+      
+
+    
     
 
-  </div>
+  
 
   );
 }

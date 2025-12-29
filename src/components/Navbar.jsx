@@ -79,7 +79,7 @@ export default function Navbar() {
         {/* Auth Buttons (Desktop) */}
         <div className="hidden lg:flex items-center gap-6">
           <Link to="/login" className="text-sm font-bold px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:bg-black hover:text-white">Login</Link>
-          <Link to="/signup" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:bg-[#E9D5FF] hover:text-purple-500">
+          <Link to="/signup" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ">
             Sign up
           </Link>
         </div>
@@ -124,7 +124,9 @@ export default function Navbar() {
               <Link to="/login" className="w-full py-4 text-center font-bold text-gray-800 border border-gray-200 rounded-2xl">
                 Login
               </Link>
-              <Link to="/signup" className="w-full py-4 text-center font-bold text-white bg-black rounded-2xl">
+              <Link to="/signup" className="w-full py-4 text-center font-bold text-white rounded-2xl
+  bg-black hover:bg-purple-700 transition-colors duration-300"
+>
                 Sign up
               </Link>
             </div>
