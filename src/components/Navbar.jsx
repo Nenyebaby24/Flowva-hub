@@ -121,10 +121,10 @@ export default function Navbar() {
             ))}
             
             <div className="flex flex-col gap-4 mt-6">
-              <Link to="/login" className="w-full py-4 text-center font-bold text-gray-800 border border-gray-200 rounded-2xl">
+              <Link to="/login" onClick={() => setIsOpen(false)} className="w-full py-4 text-center font-bold text-gray-800 border border-gray-200 rounded-2xl">
                 Login
               </Link>
-              <Link to="/signup" className="w-full py-4 text-center font-bold text-white rounded-2xl
+              <Link to="/signup" onClick={() => setIsOpen(false)} className="w-full py-4 text-center font-bold text-white rounded-2xl
   bg-black hover:bg-purple-700 transition-colors duration-300"
 >
                 Sign up
