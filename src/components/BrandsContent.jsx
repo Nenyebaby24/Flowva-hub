@@ -225,7 +225,7 @@ export default function BrandsContent() {
     
     {/* Yellow 3D Star (Layered BEHIND the graph) */}
     {/* Lowered z-index and positioned slightly left to make room for overlap */}
-    <div className="absolute bottom-8 right-3 rotate-[12deg] z-10">
+    <div className="absolute bottom-8 right-2 rotate-[12deg] z-10">
       <img 
         src="/tool/star.svg" 
         alt="" 
@@ -235,7 +235,7 @@ export default function BrandsContent() {
 
     {/* Blue Progress Graph (Layered ON TOP of the star) */}
     {/* Higher z-index and pushed off-edge to the right */}
-    <div className="absolute bottom-14 -right-15 rotate-[-8deg] z-20">
+    <div className="absolute bottom-14 -right-17 rotate-[-8deg] z-20">
       <img 
         src="/tool/progress.svg" 
         alt="" 
