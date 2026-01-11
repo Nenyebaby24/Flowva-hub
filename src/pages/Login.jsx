@@ -1,48 +1,51 @@
 import { useState } from "react";
 import { supabase } from "../lib/supabase";
 import { useNavigate, Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext"; // 1. Import the hook
 
 export default function Login() {
   const navigate = useNavigate();
+  const { login } = useAuth(); // 2. Access the login function from context
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  // 1. Added error message state
   const [errorMsg, setErrorMsg] = useState("");
 
   async function handleLogin(e) {
     e.preventDefault();
     setLoading(true);
-    // 2. Clear old errors when starting a new attempt
     setErrorMsg("");
 
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
 
-    setLoading(false);
-
     if (error) {
-      // 3. Set the error message instead of an alert
+      setLoading(false);
       setErrorMsg(error.message);
     } else {
+      // 3. Update the global Auth state with user info from Supabase
+      // Supabase stores the user's name in 'user_metadata' if provided during signup
+      login({
+        name: data.user.user_metadata?.full_name || data.user.email.split('@')[0], 
+        email: data.user.email,
+      });
+
+      setLoading(false);
       navigate("/dashboard");
     }
   }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#8B1CFF] p-4 font-sans">
-      
       <div className="bg-white w-full max-w-[480px] rounded-2xl py-12 px-8 md:px-12 flex flex-col items-center shadow-xl">
-        
         <header className="text-center mb-8">
           <h1 className="text-[#8B1CFF] text-3xl font-bold mb-2">Log in to flowva</h1>
           <p className="text-gray-500 text-sm font-medium">Log in to receive personalized recommendations</p>
         </header>
 
-        {/* 4. Display the error message in a nice UI box */}
         {errorMsg && (
           <div className="w-full bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm mb-6 text-center">
             {errorMsg}
@@ -115,7 +118,6 @@ export default function Login() {
         <p className="text-gray-500 text-sm font-medium">
           Don't have an account? <Link to="/signup" className="text-[#8B1CFF] font-bold ml-1">Sign up</Link>
         </p>
-
       </div>
     </div>
   );
